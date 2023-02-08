@@ -1,0 +1,28 @@
+{
+  "name": "sushiswap-liquidity-mining-wallet-webmob",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "clean": "npx hardhat clean",
+    "deploy": "npx hardhat run scripts/deploy.js --network ropsten",
+    "mint": "npx hardhat run scripts/mint.js --network ropsten",
+    "add-liquidity": "npx hardhat run scripts/addLiquidity.js --network ropsten",
+    "add-pool": "npx hardhat run scripts/addPool.js --network ropsten",
+    "deposit": "npx hardhat run scripts/deposit.js --network ropsten",
+    "withdraw": "npx hardhat run scripts/withdraw.js --network ropsten",
+    "emergency-withdraw": "npx hardhat run scripts/emergencyWithdraw.js --network ropsten",
+    "get-wallet-data": "npx hardhat run scripts/getWalletData.js --network ropsten"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@sushiswap/core": "^2.0.0-canary.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.2",
+    "hardhat": "^2.9.2"
+  }
+}
